@@ -26,7 +26,6 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/togari/include
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/togari/bluetooth
 
 # Kernel properties
-TARGET_KERNEL_SOURCE := kernel/sony/msm8x74
 TARGET_KERNEL_CONFIG := cm_rhine_togari_row_defconfig
 
 # Partition information

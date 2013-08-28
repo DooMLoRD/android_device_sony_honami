@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-char const*const LCD_BACKLIGHT_FILE		= "/sys/class/leds/lm3533-lcd-bl-1/brightness";
-char const*const LCD_BACKLIGHT2_FILE		= "/sys/class/leds/lm3533-lcd-bl-2/brightness";
-char const*const RED_LED_FILE			= "/sys/class/leds/lm3533-red/brightness";
-char const*const GREEN_LED_FILE			= "/sys/class/leds/lm3533-green/brightness";
-char const*const BLUE_LED_FILE			= "/sys/class/leds/lm3533-blue/brightness";
+char const*const LCD_BACKLIGHT_FILE		= "/sys/class/leds/wled:backlight/brightness";
+char const*const LCD_BACKLIGHT2_FILE		= "/dev/null";
+char const*const RED_LED_FILE			= "/sys/class/leds/led:rgb_red/brightness";
+char const*const GREEN_LED_FILE			= "/sys/class/leds/led:rgb_green/brightness";
+char const*const BLUE_LED_FILE			= "/sys/class/leds/led:rgb_blue/brightness";
 
 char const*const LED_FILE_PATTERN[]		= {
-"/sys/class/leds/lm3533-red/pattern",
-"/sys/class/leds/lm3533-green/pattern",
-"/sys/class/leds/lm3533-blue/pattern",
+	"/sys/class/leds/led:rgb_red/pattern",
+	"/sys/class/leds/led:rgb_green/pattern",
+	"/sys/class/leds/led:rgb_blue/pattern",
 };
 
 char const*const PATTERNOFF			= "0,0,0,0";

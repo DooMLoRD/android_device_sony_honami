@@ -8,24 +8,22 @@ on boot
     chown system system /sys/devices/i2c-0/0-0036/als_result
 
     # Panel backlight
-    chown system system /sys/class/leds/lm3533-lcd-bl-1/brightness
-    chmod 660 /sys/class/leds/lm3533-lcd-bl-1/brightness
-    chown system system /sys/class/leds/lm3533-lcd-bl-2/brightness
-    chmod 660 /sys/class/leds/lm3533-lcd-bl-2/brightness
+    chown system system /sys/class/leds/wled:backlight/brightness
+    chmod 660 /sys/class/leds/wled:backlight/brightness
 
     # LED
-    chown system system /sys/class/leds/lm3533-red/brightness
-    chmod 660 /sys/class/leds/lm3533-red/brightness
-    chown system system /sys/class/leds/lm3533-green/brightness
-    chmod 660 /sys/class/leds/lm3533-green/brightness
-    chown system system /sys/class/leds/lm3533-blue/brightness
-    chmod 660 /sys/class/leds/lm3533-blue/brightness
-    chown system system /sys/class/leds/lm3533-red/pattern
-    chmod 660 /sys/class/leds/lm3533-red/pattern
-    chown system system /sys/class/leds/lm3533-green/pattern
-    chmod 660 /sys/class/leds/lm3533-green/pattern
-    chown system system /sys/class/leds/lm3533-blue/pattern
-    chmod 660 /sys/class/leds/lm3533-blue/pattern
+    chown system system /sys/class/leds/led:rgb_red/brightness
+    chmod 660 /sys/class/leds/led:rgb_red/brightness
+    chown system system /sys/class/leds/led:rgb_green/brightness
+    chmod 660 /sys/class/leds/led:rgb_green/brightness
+    chown system system /sys/class/leds/led:rgb_blue/brightness
+    chmod 660 /sys/class/leds/led:rgb_blue/brightness
+    chown system system /sys/class/leds/led:rgb_red/pattern
+    chmod 660 /sys/class/leds/led:rgb_red/pattern
+    chown system system /sys/class/leds/led:rgb_green/pattern
+    chmod 660 /sys/class/leds/led:rgb_green/pattern
+    chown system system /sys/class/leds/led:rgb_blue/pattern
+    chmod 660 /sys/class/leds/led:rgb_blue/pattern
 
     # Vibrator
     chown system system /sys/devices/i2c-2/2-0049/intensity

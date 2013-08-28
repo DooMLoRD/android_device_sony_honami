@@ -1,8 +1,8 @@
 # Device Type
 touch.deviceType = touchScreen
 
-# Pressure
+# Pressure (Not tuned yet)
 touch.pressure.scale = 0.0074
 
-# Size
+# Size (Not tuned yet)
 touch.size.scale = 32.69

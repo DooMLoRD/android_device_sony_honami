@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Inherit the fusion-common definitions
-# $(call inherit-product, device/sony/fusion3-common/fusion3.mk)
+$(call inherit-product, device/sony/rhine-common/rhine.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/sony/togari/overlay
 
@@ -45,8 +45,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
 
 # USB function switching
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/rootdir/init.sony.usb.rc:root/init.sony.usb.rc
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/init.sony.usb.rc:root/init.sony.usb.rc
 
 # Vold
 PRODUCT_COPY_FILES += \
@@ -75,4 +75,4 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalv
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Include non-opensource parts
-#$(call inherit-product, vendor/sony/togari/togari-vendor.mk)
+$(call inherit-product, vendor/sony/togari/togari-vendor.mk)

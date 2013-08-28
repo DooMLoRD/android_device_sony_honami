@@ -35,7 +35,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Common Sony Resources
 $(call inherit-product, device/sony/common/resources-xxhdpi.mk)
 
-# Inherit from odin device
+# Inherit from togari device
 $(call inherit-product, device/sony/togari/togari.mk)
 
 # Set those variables here to overwrite the inherited values.

@@ -1,2 +1,2 @@
-android_device_sony_odin
-========================
+android_device_sony_togari
+==========================

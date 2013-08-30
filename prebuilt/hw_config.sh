@@ -3,26 +3,25 @@
 # Used to set special parameters.
 
 # Proximity sensor configuration
-dev=/sys/bus/i2c/devices/2-0054/
-val_cycle=0
-val_nburst=5
-val_freq=1
-val_threshold=5
-val_filter=0
+val_hi_threshold=400
+val_lo_threshold=250
+val_pulse_count=4
 
-ta_param_loader 60240 prox_cal
-val_calibrated=$?
+val_calibrated=$(ta_param_loader -t 4970 -d 0 -c 1 -f "%d" -p)
 case $val_calibrated in
  1)
-  ta_param_loader 60240 threshold
-  val_threshold=$?
-  ta_param_loader 60240 rfilter
-  val_filter=$?
+  val_hi_threshold=0x$(ta_param_loader -t 4970 -d 1 -c 2 -f "%x" -p)
+  val_lo_threshold=0x$(ta_param_loader -t 4970 -d 3 -c 2 -f "%x" -p)
+  val_pulse_count=$(ta_param_loader -t 4970 -d 5 -c 1 -f "%d" -p)
   ;;
 esac
 
-echo $val_cycle > $dev/cycle    # Duration Cycle. Valid range is 0 - 3.
-echo $val_nburst > $dev/nburst  # Number of pulses in burst. Valid range is 0 - 15.
-echo $val_freq > $dev/freq      # Burst frequency. Valid range is 0 - 3.
-echo $val_threshold > $dev/threshold # sensor threshold. Valid range is 0 - 15 (0.12V - 0.87V)
-echo $val_filter > $dev/filter  # RFilter. Valid range is 0 - 3.
+for dev in `ls -d /sys/devices/virtual/input/input*`
+do
+ if [ "`cat ${dev}/name`" = "apds9930_proximity" ]; then
+   echo $val_hi_threshold > $dev/prx_hith # sensor high threshold. Valid range is 0 - 1023
+   echo $val_lo_threshold > $dev/prx_loth # sensor low threshold. Valid range is 0 - 1023
+   echo $val_pulse_count > $dev/prx_ppulse # Led pulse count. Valid range is 0 - 255
+   break
+ fi
+done

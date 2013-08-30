@@ -28,13 +28,12 @@ etc/firmware/adsp.b03
 etc/firmware/adsp.b04
 etc/firmware/adsp.b05
 etc/firmware/adsp.b06
-etc/firmware/adsp.b07
 etc/firmware/adsp.b08
 etc/firmware/adsp.b09
 etc/firmware/adsp.b10
 etc/firmware/adsp.b11
 etc/firmware/adsp.b12
-etc/firmware/adsp
+etc/firmware/adsp.mdt
 etc/firmware/cmnlib.b00
 etc/firmware/cmnlib.b01
 etc/firmware/cmnlib.b02
@@ -45,8 +44,8 @@ etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/touch_chip_id_0x74_config_id_0x0011.bin
 etc/firmware/touch_chip_id_0x74_config_id_0x0460.bin
-etc/firmware/touch_chip_id_0x74_config_id_0x0010.bin
-etc/firmware/touch_chip_id_0x74_config_id_0x0012.bin
+etc/firmware/touch_chip_id_0x75_config_id_0x0010.bin
+etc/firmware/touch_chip_id_0x75_config_id_0x0012.bin
 etc/firmware/touch_module_id_0x43.img
 etc/firmware/touch_module_id_0x44.img
 etc/firmware/tzlibasb.b00

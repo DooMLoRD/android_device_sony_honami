@@ -88,7 +88,7 @@ etc/firmware/msm8274/modem.b23
 etc/firmware/msm8274/modem.b24
 etc/firmware/msm8274/modem.b25
 etc/firmware/msm8274/modem.b26
-etc/firmware/msm8284/modem.mdt
+etc/firmware/msm8274/modem.mdt
 etc/firmware/msm8974/mba.b00
 etc/firmware/msm8974/mba.mdt
 etc/firmware/msm8974/modem.b00

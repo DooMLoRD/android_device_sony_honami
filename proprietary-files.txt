@@ -118,8 +118,8 @@ etc/firmware/msm8974/modem.b24
 etc/firmware/msm8974/modem.b25
 etc/firmware/msm8974/modem.b26
 etc/firmware/msm8974/modem.mdt
-lib/hw/camera.msm8974.so:lib/hw/vendor-camera.msm8974.so
-lib/hw/camera.qcom.so:lib/hw/vendor-camera.qcom.so
+lib/hw/camera.msm8974.so
+lib/hw/camera.qcom.so
 lib/hw/gps.default.so
 lib/hw/nfc.msm8974.so
 lib/libMiscTaAccessor.so
@@ -169,11 +169,11 @@ vendor/lib/libdrmfs.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
-vendor/lib/libmmcamera_cac.so
+vendor/lib/libmmcamera_cac_lib.so
 vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmmcamera_img_lib.so
-vendor/lib/libmmcamera2_c2d_modules.so
-vendor/lib/libmmcamera2_cpp_modules.so
+vendor/lib/libmmcamera_imglib.so
+vendor/lib/libmmcamera2_c2d_module.so
+vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera2_isp_modules.so
@@ -181,8 +181,8 @@ vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
-vendor/lib/libmmcamera2_vpe_modules.so
-vendor/lib/libmmcamera2_wnr_modules.so
+vendor/lib/libmmcamera2_vpe_module.so
+vendor/lib/libmmcamera2_wnr_module.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libnetmgr.so
 vendor/lib/liboemcamera.so

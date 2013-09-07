@@ -8,6 +8,8 @@ bin/fm_qsoc_patches
 bin/fmconfig
 bin/hci_qcomm_init
 bin/illumination_service
+bin/irsc_util
+bin/mm-qcamera-daemon
 bin/mpdecision
 bin/netmgrd
 bin/prox_cal_data_manager
@@ -229,4 +231,5 @@ vendor/lib/librpmb.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 vendor/lib/libssd.so
+vendor/lib/libsurround_proc.so
 vendor/lib/libtime_genoff.so

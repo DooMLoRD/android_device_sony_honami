@@ -67,6 +67,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/usr/idc/max1187x_pen_0.idc:system/usr/idc/max1187x_pen_0.idc \
     $(LOCAL_PATH)/rootdir/system/usr/idc/max1187x_touchscreen_0.idc:system/usr/idc/max1187x_touchscreen_0.idc
 
+# Misc Sony config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/system/etc/ramdump_ssr.xml:system/etc/ramdump_ssr.xml
+
 # Device specific part for two-stage boot
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device

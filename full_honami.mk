@@ -22,12 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Common Sony Resources
 $(call inherit-product, device/sony/common/resources-xxhdpi.mk)
 
-# Inherit from togari device
-$(call inherit-product, device/sony/togari/togari.mk)
+# Inherit from honami device
+$(call inherit-product, device/sony/honami/honami.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_togari
-PRODUCT_DEVICE := togari
+PRODUCT_NAME := full_honami
+PRODUCT_DEVICE := honami
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_MODEL := Xperia Z Ultra

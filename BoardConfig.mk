@@ -19,7 +19,7 @@
 #-include vendor/sony/honami/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := C6802,C6806,C6833,C6843,honami
+TARGET_OTA_ASSERT_DEVICE := L39h,C6902,C6903,C6906,C6843,honami
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/honami/include
 
